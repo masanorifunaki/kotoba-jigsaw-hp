@@ -1,0 +1,62 @@
+:root {
+  --paper: #faf8f3;
+  --sumi: #22201d;
+  --sumi-soft: #5c574f;
+  --line: #e3ddd1;
+  --shu: #b8322a;
+  --link: #3f78b3;
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    --paper: #1c1b19;
+    --sumi: #ece8df;
+    --sumi-soft: #b3ada3;
+    --line: #3a3732;
+    --link: #8db8e3;
+  }
+}
+body {
+  margin: 0;
+  background: var(--paper);
+  color: var(--sumi);
+  font-family: "Hiragino Mincho ProN", "Yu Mincho", "YuMincho", serif;
+  line-height: 1.9;
+}
+main {
+  max-width: 640px;
+  margin: 0 auto;
+  padding: 48px 16px 64px;
+}
+h1 {
+  font-size: 1.5rem;
+  font-weight: normal;
+  margin: 0 0 8px;
+}
+h1::after {
+  content: "";
+  display: block;
+  width: 32px;
+  height: 3px;
+  margin-top: 12px;
+  background: var(--shu);
+}
+h2 {
+  font-size: 1.1rem;
+  font-weight: normal;
+  margin: 40px 0 8px;
+  padding-bottom: 4px;
+  border-bottom: 1px solid var(--line);
+}
+p, li {
+  font-size: 1rem;
+}
+ul {
+  padding-left: 1.4em;
+}
+a {
+  color: var(--link);
+}
+.date {
+  color: var(--sumi-soft);
+  font-size: 0.9rem;
+}
