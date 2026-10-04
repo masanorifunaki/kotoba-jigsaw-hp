@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="660" height="660" viewBox="-10 -5 220 220">
+<defs><filter id="brush8" x="-10%" y="-10%" width="120%" height="120%"><feTurbulence type="fractalNoise" baseFrequency="0.05" numOctaves="2" seed="7"/><feDisplacementMap in="SourceGraphic" scale="3"/></filter><clipPath id="clip8"><path d="M34 50 L56 50 L68 20 L90 50 L110 50 L132 20 L144 50 L166 50 L166.0 95.0 C154.0 87.0 142.0 97.0 142.0 111.0 C142.0 125.0 154.0 135.0 166.0 127.0 L166 172 L116.0 172.0 C124.0 160.0 114.0 148.0 100.0 148.0 C86.0 148.0 76.0 160.0 84.0 172.0 L34 172 L34.0 127.0 C46.0 135.0 58.0 125.0 58.0 111.0 C58.0 97.0 46.0 87.0 34.0 95.0 L34 50 Z"/></clipPath></defs>
+<g transform="rotate(-10 100 110)">
+<g filter="url(#brush8)">
+<path d="M34 50 L56 50 L68 20 L90 50 L110 50 L132 20 L144 50 L166 50 L166.0 95.0 C154.0 87.0 142.0 97.0 142.0 111.0 C142.0 125.0 154.0 135.0 166.0 127.0 L166 172 L116.0 172.0 C124.0 160.0 114.0 148.0 100.0 148.0 C86.0 148.0 76.0 160.0 84.0 172.0 L34 172 L34.0 127.0 C46.0 135.0 58.0 125.0 58.0 111.0 C58.0 97.0 46.0 87.0 34.0 95.0 L34 50 Z" fill="#fdfcf9" stroke="#22201d" stroke-width="4" stroke-linejoin="round"/>
+<path d="M58 49 L68 22 L88 49 Z" fill="#93705a"/><path d="M112 49 L132 22 L142 49 Z" fill="#93705a"/>
+</g>
+<path d="M66 46 L69 33 L78 46 Z" fill="#e8c3bd"/><path d="M134 46 L131 33 L122 46 Z" fill="#e8c3bd"/>
+<g clip-path="url(#clip8)"><path d="M78 168 L122 168 L122 210 L78 210 Z" fill="#93705a" opacity="0.92"/><path d="M70 49 Q100 43 130 49 Q120 60 100 62 Q80 60 70 49 Z" fill="#93705a" opacity="0.92"/><circle cx="78" cy="90" r="11" fill="#5f97d0"/><circle cx="82" cy="91" r="6.4" fill="#22201d"/><circle cx="84.0" cy="86.0" r="2.8" fill="#fff"/><circle cx="77.0" cy="95.0" r="1.2" fill="#fff"/><circle cx="122" cy="90" r="11" fill="#d9a23a"/><circle cx="126" cy="91" r="6.4" fill="#22201d"/><circle cx="128.0" cy="86.0" r="2.8" fill="#fff"/><circle cx="121.0" cy="95.0" r="1.2" fill="#fff"/><path d="M94 107 L106 107 L100 114 Z" fill="#9a6a5a"/><path d="M100 114 Q95 121 88 118 M100 114 Q105 121 112 118" fill="none" stroke="#22201d" stroke-width="2.4" stroke-linecap="round"/></g>
+</g>
+<path d="M38 8 Q30 16 36 26 M28 14 Q22 20 26 28" fill="none" stroke="#22201d" stroke-width="2.4" stroke-linecap="round"/>
+</svg>

@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1024" height="1024" viewBox="0 0 200 200">
+  <defs>
+    <filter id="brush" x="-10%" y="-10%" width="120%" height="120%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.05" numOctaves="2" seed="7"/>
+      <feDisplacementMap in="SourceGraphic" scale="3"/>
+    </filter>
+    <filter id="washi">
+      <feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="3" seed="3"/>
+      <feColorMatrix values="0 0 0 0 0.5  0 0 0 0 0.45  0 0 0 0 0.36  0 0 0 0.09 0"/>
+    </filter>
+  </defs>
+  <!-- 和紙の背景 -->
+  <rect width="200" height="200" fill="#e9e2d2"/>
+  <rect width="200" height="200" filter="url(#washi)"/>
+  <!-- 白猫のピースを 1.3 倍にして顔を大きく切り取る。右の凸と下の凹は端からのぞかせる -->
+  <g transform="translate(100 36) scale(1.3) translate(-100 -36)">
+    <g transform="rotate(-6 100 96)">
+      <g filter="url(#brush)">
+        <path d="M34 50 L56 50 L68 20 L90 50 L110 50 L132 20 L144 50 L166 50 L166 92 C180 84 194 94 194 108 C194 122 180 132 166 124 L166 172 L122 172 C130 156 120 142 100 142 C80 142 70 156 78 172 L34 172 Z" fill="#fdfcf9" stroke="#22201d" stroke-width="4" stroke-linejoin="round"/>
+        <path d="M58 49 L68 22 L88 49 Z" fill="#8c857d"/>
+        <path d="M112 49 L132 22 L142 49 Z" fill="#8c857d"/>
+      </g>
+      <path d="M66 46 L69 33 L78 46 Z" fill="#e8c3bd"/>
+      <path d="M134 46 L131 33 L122 46 Z" fill="#e8c3bd"/>
+      <!-- 顔（開始の白猫 CatStart と同じ目） -->
+      <ellipse cx="77" cy="88" rx="20" ry="16" fill="#a39b92" opacity="0.45"/>
+      <ellipse cx="123" cy="88" rx="20" ry="16" fill="#a39b92" opacity="0.45"/>
+      <circle cx="78" cy="90" r="11" fill="#5f97d0"/>
+      <circle cx="122" cy="90" r="11" fill="#5f97d0"/>
+      <circle cx="78" cy="91" r="6.4" fill="#22201d"/>
+      <circle cx="122" cy="91" r="6.4" fill="#22201d"/>
+      <circle cx="82" cy="86" r="2.8" fill="#ffffff"/>
+      <circle cx="126" cy="86" r="2.8" fill="#ffffff"/>
+      <circle cx="75" cy="95" r="1.2" fill="#ffffff"/>
+      <circle cx="119" cy="95" r="1.2" fill="#ffffff"/>
+      <!-- ほおの赤み -->
+      <ellipse cx="60" cy="106" rx="8" ry="5" fill="#f0b3ad" opacity="0.6"/>
+      <ellipse cx="140" cy="106" rx="8" ry="5" fill="#f0b3ad" opacity="0.6"/>
+      <path d="M94 107 L106 107 L100 114 Z" fill="#e3a09f"/>
+      <path d="M100 114 Q95 121 88 118 M100 114 Q105 121 112 118" fill="none" stroke="#22201d" stroke-width="2.4" stroke-linecap="round"/>
+    </g>
+  </g>
+</svg>
