@@ -2,7 +2,7 @@
 <filter id="brush" x="-10%" y="-10%" width="120%" height="120%"><feTurbulence type="fractalNoise" baseFrequency="0.05" numOctaves="2" seed="7"/><feDisplacementMap in="SourceGraphic" scale="3"/></filter>
 </defs>
 <g transform="rotate(-12 100 110)"><g filter="url(#brush)">
-<path d="M34 50 L56 50 L68 20 L90 50 L110 50 L132 20 L144 50 L166 50 L166 92 C180 84 194 94 194 108 C194 122 180 132 166 124 L166 172 L122 172 C130 156 120 142 100 142 C80 142 70 156 78 172 L34 172 Z" fill="#fdfcf9" stroke="#22201d" stroke-width="4" stroke-linejoin="round"/>
+<path d="M34 50 L56 50 L68 20 L90 50 L110 50 L132 20 L144 50 L166 50 L166 92 C180 84 194 94 194 108 C194 122 180 132 166 124 L166 172 L122 172 C130 156 120 142 100 142 C80 142 70 156 78 172 L34 172 Z" fill="#fdfcf9" stroke="#3f2320" stroke-width="4" stroke-linejoin="round"/>
 <path d="M58 49 L68 22 L88 49 Z" fill="#8c857d"/><path d="M112 49 L132 22 L142 49 Z" fill="#8c857d"/>
 </g>
 <path d="M66 46 L69 33 L78 46 Z" fill="#e8c3bd"/><path d="M134 46 L131 33 L122 46 Z" fill="#e8c3bd"/>
@@ -12,5 +12,5 @@
 <circle cx="82" cy="86" r="2.8" fill="#fff"/><circle cx="126" cy="86" r="2.8" fill="#fff"/>
 <circle cx="75" cy="95" r="1.2" fill="#fff"/><circle cx="119" cy="95" r="1.2" fill="#fff"/>
 <path d="M94 107 L106 107 L100 114 Z" fill="#e3a09f"/>
-<path d="M100 114 Q95 121 88 118 M100 114 Q105 121 112 118" fill="none" stroke="#22201d" stroke-width="2.4" stroke-linecap="round"/>
+<path d="M100 114 Q95 121 88 118 M100 114 Q105 121 112 118" fill="none" stroke="#3f2320" stroke-width="2.4" stroke-linecap="round"/>
 </g></svg>
