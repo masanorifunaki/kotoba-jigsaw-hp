@@ -1,10 +1,10 @@
 # kotoba-jigsaw-hp
 
-iOS アプリ「言葉ジグソー」の公開ページです。GitHub Pages で配信します。
+「ことば猫」の入口のページです。YouTube のアニメ、Kindle の漫画、note の記事、iOS アプリ「言葉ジグソー」へ案内します。アプリのサポートとプライバシーポリシーも置きます。GitHub Pages で配信します。
 
 | ページ | URL |
 | --- | --- |
-| アプリの紹介・サポート（お問い合わせ） | https://masanorifunaki.github.io/kotoba-jigsaw-hp/ |
+| 入口・アプリのサポート（お問い合わせ） | https://masanorifunaki.github.io/kotoba-jigsaw-hp/ |
 | プライバシーポリシー | https://masanorifunaki.github.io/kotoba-jigsaw-hp/privacy.html |
 
 アプリの中と App Store Connect から、この URL を参照します。URL を変えると両方が壊れるため、ファイル名は変えません。
@@ -13,9 +13,10 @@ iOS アプリ「言葉ジグソー」の公開ページです。GitHub Pages で
 
 | ファイル | 中身 |
 | --- | --- |
-| `index.html`・`home.css` | アプリの紹介とサポート。色と書体はアプリの `docs/DESIGN.md` に合わせる |
+| `index.html`・`home.css` | 四つの入口の案内とサポート。色と書体は動画（kotoba-jigsaw の `docs/VIDEO_DESIGN.md`）から借りる |
 | `privacy.html`・`style.css` | プライバシーポリシー。`style.css` は要素に直接かかる書き方のため、`index.html` では読み込まない |
-| `images/` | 猫とアイコンの絵。kotoba-jigsaw の `docs/design/`（`start-cats/`・`hanamaru-cats/CatStart-Hug.svg`・`AppIcon.svg`）の写し。元の絵を変えたら、ここにも写し直す |
+| `images/cats/` | 9 匹の猫の表情。kotoba-jigsaw の `contents/player/faces.html` が描く絵の写し。`<猫の ID>_<表情>.svg` の名前にする |
+| `images/` | アプリのアイコン（`AppIcon.svg`）と花丸の猫（`CatStart-Hug.svg`）は kotoba-jigsaw の `docs/design/` の写し。ショートの表紙（`short-*`）・横長の回のサムネイル（`wide-*`）・漫画の表紙（`manga-*`）・note の見出し画像（`note-*`）は、書き出した画像を縮めたもの。元の絵を変えたら、ここにも写し直す |
 
 `sitemap.xml` には、公開する 2 ページの URL を並べます。ページを足したら、ここにも足します。
 
