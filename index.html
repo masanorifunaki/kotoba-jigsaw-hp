@@ -3,15 +3,15 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>言葉ジグソー｜誤解されやすい日本語の毛筆ジグソーパズル（iPhone アプリ）</title>
-  <meta name="description" content="誤解されやすい日本語を、毛筆の書のジグソーパズルにする iPhone アプリ。完成したら「本当の意味はどっち？」の二択で、正しい意味とよくある誤解を確かめます。1日5問まで無料。">
+  <title>ことば猫｜誤解されやすい日本語を、アニメ・漫画・記事・パズルで</title>
+  <meta name="description" content="誤解されやすい日本語の本当の意味と由来を、九匹の猫が案内します。YouTube のアニメ、Kindle の漫画、note の記事、iPhone アプリ「言葉ジグソー」の四つの入口から楽しめます。">
   <link rel="canonical" href="https://masanorifunaki.github.io/kotoba-jigsaw-hp/">
   <link rel="icon" href="images/favicon.png" type="image/png" sizes="96x96">
   <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
   <meta property="og:type" content="website">
-  <meta property="og:site_name" content="言葉ジグソー">
-  <meta property="og:title" content="言葉ジグソー｜誤解されやすい日本語の毛筆ジグソーパズル">
-  <meta property="og:description" content="誤解されやすい日本語を、毛筆の書のジグソーパズルにする iPhone アプリ。完成したら「本当の意味はどっち？」の二択で、正しい意味とよくある誤解を確かめます。1日5問まで無料。">
+  <meta property="og:site_name" content="ことば猫">
+  <meta property="og:title" content="ことば猫｜誤解されやすい日本語を、アニメ・漫画・記事・パズルで">
+  <meta property="og:description" content="誤解されやすい日本語の本当の意味と由来を、九匹の猫が案内します。YouTube のアニメ、Kindle の漫画、note の記事、iPhone アプリ「言葉ジグソー」の四つの入口から楽しめます。">
   <meta property="og:url" content="https://masanorifunaki.github.io/kotoba-jigsaw-hp/">
   <meta property="og:image" content="https://masanorifunaki.github.io/kotoba-jigsaw-hp/images/og-image.png">
   <meta property="og:locale" content="ja_JP">
@@ -37,141 +37,332 @@
   </script>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Shippori+Mincho:wght@400;500;700&amp;family=Yuji+Syuku&amp;display=swap">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Kiwi+Maru:wght@400;500&amp;family=Yuji+Boku&amp;family=Zen+Maru+Gothic:wght@500;700&amp;display=swap">
   <link rel="stylesheet" href="home.css">
 </head>
 <body>
-<div class="wrap">
-  <header class="hero">
-    <div class="board" aria-hidden="false">
-      <div class="hanshi">
-        <h1>言葉<br>ジグソー</h1>
-        <span class="rakkan" aria-hidden="true">完成</span>
-      </div>
-    </div>
-    <div class="hero-copy">
-      <p class="eyebrow">iPhone アプリ</p>
-      <p class="tagline">誤解されやすい日本語を、毛筆のジグソーパズルに。</p>
-      <p class="lead">落ちてくるピースを半紙にはめて、一枚の書を仕上げます。完成したら「本当の意味はどっち？」。思い込んでいた意味が、ひっくり返るかもしれません。</p>
-      <div class="hero-cta">
-        <a class="store-button" href="https://apps.apple.com/app/apple-store/id6817150951?pt=129529632&amp;ct=hp&amp;mt=8"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 4v11"/><path d="M7 10.5 12 15.5 17 10.5"/><path d="M5 19.5h14"/></svg>App Store で入手</a>
-        <span class="small-note">iPhone（iOS 26 以降）・一日五問まで無料</span>
-      </div>
-    </div>
-  </header>
-</div>
 
-<section class="tray-band" aria-labelledby="cats-title">
+<header class="topbar">
   <div class="wrap">
-    <div class="section-head" style="align-items: center; text-align: center;">
-      <h2 id="cats-title">九匹の先生が、待っています</h2>
-      <p>パズルごとに、九匹のうち一匹が先生になります。始めの合図では、みんなで跳ねて応援します。</p>
-    </div>
-    <p class="countdown" aria-label="三、二、一、始め"><span>三</span><span>二</span><span>一</span><span>始め</span></p>
-    <div class="tray" role="list">
-      <div class="tray-row back">
-        <div class="cat" role="listitem" style="--i: 0; --tilt: -7deg;"><img src="images/CatStart-01.svg" alt="きらきらの猫" width="112" height="112" loading="lazy"></div>
-        <div class="cat" role="listitem" style="--i: 1; --tilt: 5deg;"><img src="images/CatStart-02.svg" alt="ウインクの猫" width="112" height="112" loading="lazy"></div>
-        <div class="cat" role="listitem" style="--i: 2; --tilt: -4deg;"><img src="images/CatStart.svg" alt="首をかしげて見上げる白猫" width="112" height="112" loading="lazy"></div>
-        <div class="cat" role="listitem" style="--i: 3; --tilt: 6deg;"><img src="images/CatStart-03.svg" alt="星の目の猫" width="112" height="112" loading="lazy"></div>
-        <div class="cat" role="listitem" style="--i: 4; --tilt: -6deg;"><img src="images/CatStart-04.svg" alt="得意げな猫" width="112" height="112" loading="lazy"></div>
-      </div>
-      <div class="tray-row front">
-        <div class="cat" role="listitem" style="--i: 5; --tilt: 7deg;"><img src="images/CatStart-05.svg" alt="「!!」の猫" width="112" height="112" loading="lazy"></div>
-        <div class="cat" role="listitem" style="--i: 6; --tilt: -5deg;"><img src="images/CatStart-06.svg" alt="驚いた猫" width="112" height="112" loading="lazy"></div>
-        <div class="cat" role="listitem" style="--i: 7; --tilt: 4deg;"><img src="images/CatStart-07.svg" alt="舌を出した猫" width="112" height="112" loading="lazy"></div>
-        <div class="cat" role="listitem" style="--i: 8; --tilt: -7deg;"><img src="images/CatStart-08.svg" alt="耳をぴくっとさせた猫" width="112" height="112" loading="lazy"></div>
+    <a class="brand" href="#top"><img src="images/cats/cat-main_neutral.svg" alt="" width="38" height="38">ことば猫</a>
+    <nav class="topnav" aria-label="入口">
+      <a href="#anime">アニメ</a><a href="#manga">漫画</a><a href="#note">読みもの</a><a href="#app">パズル</a>
+    </nav>
+  </div>
+</header>
+
+<section class="hero" id="top" aria-labelledby="hero-title">
+  <div class="wrap hero-main">
+    <div class="hero-copy">
+      <p class="eyebrow">誤解されやすい日本語と、九匹の猫</p>
+      <h1 id="hero-title">その言葉、<br>本当は<em>どっち</em>の意味？</h1>
+      <p class="lead">思い込みやすい言葉の本当の意味と、その裏にある歴史を、九匹の猫たちが案内します。アニメで見る、漫画で読む、記事で深める、パズルで解く。好きな入口からどうぞ。</p>
+      <div class="host">
+        <img src="images/cats/cat-main_surprised.svg" alt="首をかしげる白い猫" width="76" height="76">
+        <p class="bubble tail-left">ほんとかな？ たしかめてみよっ！</p>
       </div>
     </div>
-    <p class="tray-caption">迷ったら「猫の道案内」。ピースを持つと、先生の猫が足あとを残して、はめる場所まで歩いてくれます。</p>
+
+    <div class="board" id="board">
+      <a class="piece c-anime tab-r tab-b" href="#anime" data-door="anime">
+        <span class="piece-top">
+          <span class="piece-kind"><svg class="yt" viewBox="0 0 28 20" aria-hidden="true"><rect width="28" height="20" rx="5" fill="var(--yt-red)"/><path d="M11 5.5v9l7.8-4.5z" fill="#fff"/></svg>YouTube</span>
+          <img class="piece-cat" src="images/cats/cat-06_shocked.svg" alt="">
+        </span>
+        <h2>見る</h2>
+        <p>猫たちのアニメで、言葉の意味がひっくり返る</p>
+        <span class="piece-time">1〜3分</span>
+      </a>
+      <a class="piece c-manga tab-b" href="#manga" data-door="manga">
+        <span class="piece-top">
+          <span class="piece-kind"><svg class="bookmark" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linejoin="round" aria-hidden="true"><path d="M3 5.5c3-1.4 6-1.4 9 .5 3-1.9 6-1.9 9-.5v13c-3-1.4-6-1.4-9 .5-3-1.9-6-1.9-9-.5z"/><path d="M12 6v13"/></svg>漫画</span>
+          <img class="piece-cat" src="images/cats/cat-08_thinking.svg" alt="">
+        </span>
+        <h2>読む</h2>
+        <p>少し怖くて、あたたかい一話読み切り</p>
+        <span class="piece-time">1話読み切り</span>
+      </a>
+      <a class="piece c-note tab-r" href="#note" data-door="note">
+        <span class="piece-top">
+          <span class="piece-kind"><span class="notemark" aria-hidden="true">note</span>note</span>
+          <img class="piece-cat" src="images/cats/cat-03_smug.svg" alt="">
+        </span>
+        <h2>深める</h2>
+        <p>動画では語りきれない、由来の歴史を記事で</p>
+        <span class="piece-time">1本 5〜10分</span>
+      </a>
+      <a class="piece c-app" href="#app" data-door="app">
+        <span class="piece-top">
+          <span class="piece-kind"><img class="appmark" src="images/AppIcon.svg" alt="">iPhone アプリ</span>
+          <img class="piece-cat" src="images/cats/cat-04_determined.svg" alt="">
+        </span>
+        <h2>解く</h2>
+        <p>ジグソーを組んで、意味を二択で確かめる</p>
+        <span class="piece-time">1問 3分</span>
+      </a>
+    </div>
+  </div>
+
+  <div class="engawa" aria-hidden="true">
+    <div class="cats-row">
+      <img style="--i: 0" src="images/cats/cat-01_laughing.svg" alt="">
+      <img style="--i: 1" src="images/cats/cat-02_dreamy.svg" alt="">
+      <img style="--i: 2" src="images/cats/cat-03_nodding.svg" alt="">
+      <img style="--i: 3" src="images/cats/cat-04_smug.svg" alt="">
+      <img class="lead-cat" style="--i: 4" src="images/cats/cat-main_happy.svg" alt="">
+      <img style="--i: 5" src="images/cats/cat-05_surprised.svg" alt="">
+      <img style="--i: 6" src="images/cats/cat-06_laughing.svg" alt="">
+      <img style="--i: 7" src="images/cats/cat-07_happy.svg" alt="">
+      <img style="--i: 8" src="images/cats/cat-08_happy.svg" alt="">
+    </div>
   </div>
 </section>
 
-<div class="wrap">
-  <section class="section" aria-labelledby="how-title">
-    <div class="section-head">
-      <h2 id="how-title">遊び方</h2>
-      <p>一問は三分ほど。通勤や休み時間に、一語ずつ。</p>
+<section class="chooser" aria-labelledby="chooser-q">
+  <div class="wrap">
+    <img class="chooser-cat" src="images/cats/cat-01_happy.svg" alt="目がきらきらの猫" width="84" height="84">
+    <p class="chooser-q" id="chooser-q">きょうの気分で、入口を選ぶ</p>
+    <div class="chips" role="group" aria-label="気分">
+      <button class="chip" type="button" data-pick="anime" aria-pressed="false">すき間の一分で</button>
+      <button class="chip" type="button" data-pick="manga" aria-pressed="false">寝る前に、物語を</button>
+      <button class="chip" type="button" data-pick="note" aria-pressed="false">由来をじっくり知りたい</button>
+      <button class="chip" type="button" data-pick="app" aria-pressed="false">自分で確かめたい</button>
     </div>
-    <ol class="steps">
-      <li class="step">
-        <span class="step-no" aria-hidden="true">一</span>
-        <h3>組む</h3>
-        <p>上から落ちてくる十六枚のピースを、半紙の正しい場所へ。詰まったら「手本」を押している間だけ、完成した書がうっすら透けます。</p>
-      </li>
-      <li class="step">
-        <span class="step-no" aria-hidden="true">二</span>
-        <h3>確かめる</h3>
-        <p>書が仕上がると、先生の猫が落款を押します。続いて「本当の意味はどっち？」の二択に答えます。</p>
-      </li>
-      <li class="step">
-        <span class="step-no" aria-hidden="true">三</span>
-        <h3>知る</h3>
-        <p>書道の添削のように、正しい意味に朱が入ります。よくある誤解と、言葉の由来の補足も読めます。</p>
-      </li>
-    </ol>
-  </section>
-
-  <section class="section" aria-labelledby="example-title" style="padding-top: 8px;">
-    <div class="section-head">
-      <h2 id="example-title">たとえば、この言葉</h2>
-    </div>
-    <div class="quiz">
-      <div class="quiz-word">
-        <span class="quiz-category">ことわざ</span>
-        <span class="quiz-text">情けは人のためならず</span>
-        <span class="quiz-reading">なさけはひとのためならず</span>
-      </div>
-      <div class="quiz-question">
-        <p>そのとおり！</p>
-        <img src="images/CatStart-Hug.svg" loading="lazy" width="72" height="72" alt="花丸を抱えて喜ぶ白猫">
-      </div>
-      <div class="gaku correct">
-        <div class="gaku-head"><span class="label">正しい意味</span><span class="akaji">よくできました</span></div>
-        <p>人に情けをかけておけば、巡り巡って自分に良い報いが返ってくる。</p>
-      </div>
-      <div class="gaku wrong">
-        <div class="gaku-head"><span class="label">よくある誤解</span></div>
-        <p>情けをかけるのはその人のためにならない、という意味だと思われがち。</p>
-      </div>
-      <p class="note">補足：「ためならず」は「ためではない」の意。人のためではなく、結局は自分のため、ということ。</p>
-    </div>
-  </section>
-
-  <section class="section" aria-labelledby="daily-title" style="padding-top: 8px;">
-    <div class="section-head">
-      <h2 id="daily-title">毎日、すこしずつ</h2>
-    </div>
-    <div class="daily">
-      <div class="daily-item"><strong>一日五問は無料</strong><span>五問を解くと、その日に書いた言葉が一枚の額に並びます。</span></div>
-      <div class="daily-item"><strong>三百円で上限なし</strong><span>買い切りです。毎月の支払いはありません。広告もありません。</span></div>
-      <div class="daily-item"><strong>昨日の言葉をおさらい</strong><span>その日の最初のパズルの前に、昨日の言葉を一問だけ思い出します。</span></div>
-    </div>
-  </section>
-</div>
-
-<section class="cta" aria-labelledby="cta-title">
-  <div class="wrap cta-inner">
-    <div class="app-icon"><img src="images/AppIcon.svg" loading="lazy" width="128" height="128" alt="言葉ジグソーのアイコン"></div>
-    <h2 id="cta-title">さあ、始め</h2>
-    <p>今日の一語を、書いてみませんか。</p>
-    <a class="store-button" href="https://apps.apple.com/app/apple-store/id6817150951?pt=129529632&amp;ct=hp&amp;mt=8"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 4v11"/><path d="M7 10.5 12 15.5 17 10.5"/><path d="M5 19.5h14"/></svg>App Store で入手</a>
-    <span class="small">iPhone（iOS 26 以降）</span>
+    <p class="answer" id="answer" aria-live="polite">選ぶと、合う入口が上のピースで光ります。</p>
   </div>
 </section>
 
-<div class="wrap">
-  <footer>
-    <section aria-labelledby="support-title">
-      <h2 id="support-title">お問い合わせ</h2>
-      <p>不具合の報告、言葉の解説の誤りのご指摘、ご要望は、<a href="https://github.com/masanorifunaki/kotoba-jigsaw-hp/issues">GitHub の Issues</a> で受け付けます。投稿には GitHub のアカウントが必要です。</p>
-      <p>不具合の報告には、iPhone の機種、iOS のバージョン、起きたときの操作を書いていただけると助かります。</p>
+<main>
+  <section class="door anime" id="anime" aria-labelledby="anime-title">
+    <div class="wrap">
+      <div class="guide">
+        <img src="images/cats/cat-06_shocked.svg" alt="驚いた顔の猫" width="112" height="112">
+        <div class="guide-text">
+          <span class="kicker"><svg class="yt" viewBox="0 0 28 20" aria-hidden="true"><rect width="28" height="20" rx="5" fill="var(--yt-red)"/><path d="M11 5.5v9l7.8-4.5z" fill="#fff"/></svg>アニメ ・ YouTube</span>
+          <h2 id="anime-title">一分で、言葉がひっくり返る</h2>
+        </div>
+        <p class="bubble tail-left">えっ、そういう意味だったの!? ってなるよ。覚えたて、使ってみよーっと！</p>
+      </div>
+      <div class="split">
+        <div class="text">
+          <p>縁側に集まった猫たちが、思い込みやすい言葉の謎を追いかけるアニメです。縦のショートは一分から三分。横長の回では、歴史の場面をじっくり描きます。</p>
+          <dl class="when">
+            <dt>こんなときに</dt>
+            <dd><span>電車の待ち時間や、休み時間のすき間に</span><span>まずは言葉の正体だけ知りたいとき</span><span>猫たちの掛け合いや歌を、音を出して楽しみたいとき</span></dd>
+          </dl>
+          <a class="cta" href="https://www.youtube.com/channel/UCcCaipKKBtuiueE1to55ylg/"><svg class="yt" viewBox="0 0 28 20" aria-hidden="true"><rect width="28" height="20" rx="5" fill="var(--yt-red)"/><path d="M11 5.5v9l7.8-4.5z" fill="#fff"/></svg>YouTube でチャンネルを見る</a>
+        </div>
+        <div style="min-width: 0;">
+          <div class="shelf" role="list" aria-label="ショートの例">
+            <div class="short" role="listitem"><img src="images/short-mary-san.jpg" alt="ショート「メリーさんの電話」の表紙" loading="lazy"><span>捨てた人形から電話が来る</span></div>
+            <div class="short" role="listitem"><img src="images/short-halloween.jpg" alt="ショート「ジャック・オー・ランタン」の表紙" loading="lazy"><span>カボチャの灯りの、本当の名前</span></div>
+            <div class="short" role="listitem"><img src="images/short-chacha.jpg" alt="ショート「茶々を入れる」の表紙" loading="lazy"><span>「茶々を入れる」は淀殿のこと？</span></div>
+            <div class="short" role="listitem"><img src="images/short-gondola.jpg" alt="ショート「ゴンドラの唄」の表紙" loading="lazy"><span>百年歌い継がれた「いのち短し」</span></div>
+          </div>
+          <div class="wides">
+            <div class="wide"><img src="images/wide-himaneki.jpg" alt="横長の回「夕日を止めた平清盛」のサムネイル" loading="lazy"><span class="tag">横長の回</span><span>夕日を止めた平清盛</span></div>
+            <div class="wide"><img src="images/wide-honnoji.jpg" alt="横長の回「本能寺の変」のサムネイル" loading="lazy"><span class="tag">横長の回</span><span>本能寺の変、あの朝の四人</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="door manga" id="manga" aria-labelledby="manga-title">
+    <div class="wrap">
+      <div class="guide">
+        <img src="images/cats/cat-08_thinking.svg" alt="考えこむ本好きの猫" width="112" height="112">
+        <div class="guide-text">
+          <span class="kicker"><svg class="bookmark" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linejoin="round" aria-hidden="true"><path d="M3 5.5c3-1.4 6-1.4 9 .5 3-1.9 6-1.9 9-.5v13c-3-1.4-6-1.4-9 .5-3-1.9-6-1.9-9-.5z"/><path d="M12 6v13"/></svg>漫画 ・ Amazon Kindle</span>
+          <h2 id="manga-title">言葉ジグソー オカルト研究会</h2>
+        </div>
+        <p class="bubble tail-left">……夜に一話ずつ読むのが、いちばんいい。本で読んだとおりだ</p>
+      </div>
+      <div class="split flip">
+        <div class="text">
+          <p>平成が終わらないまま、平成三十八年を迎えた町、霧見町。中学校のオカルト研究会の猫たちが、町で起きる不思議な出来事を追い、その元になった言葉や言い伝えの本当の意味を確かめていきます。</p>
+          <dl class="when">
+            <dt>こんなときに</dt>
+            <dd><span>寝る前に、一話だけ物語にひたりたいとき</span><span>音を出せない場所で、ゆっくり読みたいとき</span><span>アニメで見た言葉を、別の筋書きで味わいたいとき</span></dd>
+          </dl>
+          <a class="cta" href="https://www.amazon.co.jp/dp/B0HMS8MT1W"><svg class="bookmark" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linejoin="round" aria-hidden="true"><path d="M3 5.5c3-1.4 6-1.4 9 .5 3-1.9 6-1.9 9-.5v13c-3-1.4-6-1.4-9 .5-3-1.9-6-1.9-9-.5z"/><path d="M12 6v13"/></svg>Amazon で読む</a>
+        </div>
+        <div class="covers" role="list" aria-label="漫画の表紙">
+          <figure class="series" role="listitem"><img src="images/manga-series.jpg" alt="「言葉ジグソー オカルト研究会」シリーズの表紙" loading="lazy" width="400" height="560"><figcaption>言葉ジグソー オカルト研究会</figcaption></figure>
+          <figure role="listitem"><img src="images/manga-04-mary-san.jpg" alt="「メリーさんの電話」の表紙" loading="lazy" width="262" height="420"><figcaption>メリーさんの電話</figcaption></figure>
+          <figure role="listitem"><img src="images/manga-05-himaneki.jpg" alt="「清盛の日招き」の表紙" loading="lazy" width="262" height="420"><figcaption>清盛の日招き</figcaption></figure>
+          <figure role="listitem"><img src="images/manga-06-haenoou.jpg" alt="「蠅の王」の表紙" loading="lazy" width="262" height="420"><figcaption>蠅の王</figcaption></figure>
+          <figure role="listitem"><img src="images/manga-07-taida.jpg" alt="「怠惰の悪魔」の表紙" loading="lazy" width="262" height="420"><figcaption>怠惰の悪魔</figcaption></figure>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="door note" id="note" aria-labelledby="note-title">
+    <div class="wrap">
+      <div class="guide">
+        <img src="images/cats/cat-03_smug.svg" alt="少し得意げな物知りの猫" width="112" height="112">
+        <div class="guide-text">
+          <span class="kicker"><span class="notemark" aria-hidden="true">note</span>読みもの ・ note</span>
+          <h2 id="note-title">見終わったあとに、もう一歩深く</h2>
+        </div>
+        <p class="bubble tail-left">ふふ、由来まで知ると、言葉ってもっとおもしろいでしょ</p>
+      </div>
+      <div class="split">
+        <div class="text">
+          <p>動画で取り上げた言葉の、由来と歴史を掘り下げる記事です。史料に書かれていることと、物語として語られてきたことを分けて、出典と一緒に読めます。</p>
+          <dl class="when">
+            <dt>こんなときに</dt>
+            <dd><span>動画を見て「本当にそうなの？」と気になったとき</span><span>人に話したくなる、もう一段の背景がほしいとき</span><span>休日に、腰を落ち着けて読みたいとき</span></dd>
+          </dl>
+          <a class="cta" href="https://note.com/kotoba_neko"><span class="notemark" aria-hidden="true">note</span>note で記事を読む</a>
+        </div>
+        <div class="articles">
+          <div class="article"><img src="images/note-mary-san.jpg" alt="" loading="lazy"><div><h3>「メリーさんの電話」の人形は、怒っていたのか</h3><p>付喪神と人形供養の本当の歴史</p></div></div>
+          <div class="article"><img src="images/note-himaneki.jpg" alt="" loading="lazy"><div><h3>平清盛は、本当に夕日を止めたのか</h3><p>日招き伝説と『平家物語』の「諸行無常」</p></div></div>
+          <div class="article"><img src="images/note-honnoji.jpg" alt="" loading="lazy"><div><h3>本能寺の変、あの朝の4人</h3><p>「天王山」の分かれ目は、本当に山崎だったのか</p></div></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="relay" aria-labelledby="relay-title">
+    <div class="wrap">
+      <div class="guide">
+        <img src="images/cats/cat-main_nodding.svg" alt="うなずく白い猫" width="112" height="112">
+        <div class="guide-text">
+          <span class="kicker">入口のつながり</span>
+          <h2 id="relay-title">たとえば「メリーさんの電話」なら</h2>
+        </div>
+        <p class="bubble tail-left">同じお話を、三つの入口でたどってみよっ！</p>
+      </div>
+      <div class="relay-row">
+        <div class="stop">
+          <span class="stop-step"><b>1</b>まず見る</span>
+          <a class="stop-card" href="https://www.youtube.com/channel/UCcCaipKKBtuiueE1to55ylg/">
+            <img src="images/short-mary-san.jpg" alt="" loading="lazy">
+            <div><span class="meta">YouTube ・ 約 1 分</span><strong>捨てた人形から電話が来る</strong><span>怪談の筋と、言葉の正体をひと息で。</span></div>
+          </a>
+        </div>
+        <div class="stop">
+          <span class="stop-step"><b>2</b>物語で読む</span>
+          <a class="stop-card" href="https://www.amazon.co.jp/dp/B0HMS8MT1W">
+            <img src="images/manga-04-mary-san.jpg" alt="" loading="lazy">
+            <div><span class="meta">漫画</span><strong>メリーさんの電話</strong><span>霧見町の団地で起きる、一夏の出来事。</span></div>
+          </a>
+        </div>
+        <div class="stop">
+          <span class="stop-step"><b>3</b>由来を深める</span>
+          <a class="stop-card" href="https://note.com/kotoba_neko">
+            <img src="images/note-mary-san.jpg" alt="" loading="lazy">
+            <div><span class="meta">note</span><strong>人形は、怒っていたのか</strong><span>付喪神と人形供養の歴史をたどる。</span></div>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="door app" id="app" aria-labelledby="app-title">
+    <div class="wrap">
+      <div class="guide">
+        <img src="images/cats/cat-04_determined.svg" alt="きりっと決めた顔の猫" width="112" height="112">
+        <div class="guide-text">
+          <span class="kicker"><img class="appmark" src="images/AppIcon.svg" alt="">パズル ・ iPhone アプリ</span>
+          <h2 id="app-title">言葉ジグソーで、自分の手で解く</h2>
+        </div>
+        <p class="bubble tail-left">答えは、ぴたっとひとつ！ 自分の手で組んで、確かめてみて</p>
+      </div>
+      <div class="stack">
+        <div class="text">
+          <p>落ちてくる十六枚のピースを半紙にはめて、一枚の書を仕上げます。完成したら「本当の意味はどっち？」。先生の猫が、正しい意味に朱を入れます。</p>
+          <dl class="when">
+            <dt>こんなときに</dt>
+            <dd><span>見て読むだけでなく、自分で答えを出したいとき</span><span>毎日少しずつ、言葉を覚えていきたいとき</span></dd>
+          </dl>
+          <div class="app-panel">
+            <img src="images/AppIcon.svg" alt="言葉ジグソーのアイコン" width="88" height="88">
+            <ul>
+              <li>一日五問まで無料</li>
+              <li>三百円の買い切りで、上限なし</li>
+              <li>広告なし・iPhone（iOS 26 以降）</li>
+            </ul>
+          </div>
+          <a class="cta blue" href="https://apps.apple.com/app/apple-store/id6817150951?pt=129529632&amp;ct=hp&amp;mt=8"><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 4v11"/><path d="M7 10.5 12 15.5 17 10.5"/><path d="M5 19.5h14"/></svg>App Store で入手</a>
+        </div>
+        <div class="quiz-mini" aria-label="出題の例">
+          <img class="hug" src="images/CatStart-Hug.svg" alt="花丸を抱えて喜ぶ白猫" width="78" height="78">
+          <span class="tag">たとえば、この言葉</span>
+          <span class="word">情けは人のためならず</span>
+          <div class="opt ok"><b>正しい意味</b><span>人に情けをかけておけば、巡り巡って自分に良い報いが返ってくる。</span></div>
+          <div class="opt"><b>よくある誤解</b><span>情けをかけるのは、その人のためにならない。</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="foot">
+  <div class="wrap">
+    <section>
+      <div class="foot-cat"><img src="images/cats/cat-02_dreamy.svg" alt="のんびりした猫" width="64" height="64"><h2>ことば猫</h2></div>
+      <ul>
+        <li><a href="https://www.youtube.com/channel/UCcCaipKKBtuiueE1to55ylg/">YouTube</a></li>
+        <li><a href="https://www.amazon.co.jp/dp/B0HMS8MT1W">漫画（Amazon Kindle）</a></li>
+        <li><a href="https://note.com/kotoba_neko">note</a></li>
+        <li><a href="https://apps.apple.com/app/apple-store/id6817150951?pt=129529632&amp;ct=hp&amp;mt=8">言葉ジグソー（App Store）</a></li>
+      </ul>
     </section>
-    <section aria-labelledby="privacy-title">
-      <h2 id="privacy-title">プライバシーポリシー</h2>
-      <p>本アプリは利用者の個人情報を収集しません。詳しくは<a href="privacy.html">プライバシーポリシー</a>をご覧ください。</p>
+    <section>
+      <h2>お問い合わせ</h2>
+      <p>不具合の報告、言葉の解説の誤りのご指摘、ご要望は <a href="https://github.com/masanorifunaki/kotoba-jigsaw-hp/issues">GitHub の Issues</a> で受け付けます。</p>
     </section>
-  </footer>
-</div>
+    <section>
+      <h2>プライバシーポリシー</h2>
+      <p>アプリは利用者の個人情報を収集しません。詳しくは<a href="https://masanorifunaki.github.io/kotoba-jigsaw-hp/privacy.html">プライバシーポリシー</a>をご覧ください。</p>
+    </section>
+  </div>
+</footer>
+
+<script>
+(function () {
+  const board = document.getElementById("board");
+  const answer = document.getElementById("answer");
+  const chips = document.querySelectorAll(".chip");
+  const answers = {
+    anime: '一分から三分の<a href="#anime">アニメ</a>が、ちょうどいい長さです。',
+    manga: '一話読み切りの<a href="#manga">漫画</a>を、一話ずつどうぞ。',
+    note: '出典つきの<a href="#note">note の記事</a>で、由来をたどれます。',
+    app: '<a href="#app">言葉ジグソー</a>で、組んで、二択で確かめられます。'
+  };
+  const defaultAnswer = answer.innerHTML;
+
+  function pick(door) {
+    chips.forEach(function (chip) {
+      chip.setAttribute("aria-pressed", String(chip.dataset.pick === door));
+    });
+    board.querySelectorAll(".piece").forEach(function (piece) {
+      piece.classList.toggle("is-picked", piece.dataset.door === door);
+    });
+    if (door) {
+      board.dataset.pick = door;
+      answer.innerHTML = answers[door];
+      return;
+    }
+    delete board.dataset.pick;
+    answer.innerHTML = defaultAnswer;
+  }
+
+  chips.forEach(function (chip) {
+    chip.addEventListener("click", function () {
+      const already = chip.getAttribute("aria-pressed") === "true";
+      if (already) {
+        pick(null);
+        return;
+      }
+      pick(chip.dataset.pick);
+    });
+  });
+})();
+</script>
 </body>
 </html>
