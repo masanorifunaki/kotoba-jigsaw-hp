@@ -15,7 +15,7 @@
 | --- | --- |
 | `index.html`・`home.css` | 入口の案内とサポート。白地に淡い色の帯を重ね、丸いボタンと角の丸いカードで組む |
 | `privacy.html`・`style.css` | 言葉ジグソーとことねこ野球盤のプライバシーポリシー。`style.css` は要素に直接かかる書き方のため、`index.html` では読み込まない |
-| `images/chara/` | 9 匹の猫の設定画（kotoba-jigsaw の `KotobaJigsaw/KotobaJigsaw/Assets.xcassets` にある `CatStart*`）を幅 480px に縮めたもの。`cat-main` がしろ、`cat-01`〜`cat-08` が野球盤の `Cat.swift` の順の猫 |
+| `images/chara/` | 9 匹の猫の設定画（kotoba-jigsaw の `KotobaJigsaw/KotobaJigsaw/Assets.xcassets` にある `CatStart*`）を幅 480px に縮めたもの。`cat-main` が設定画の主役の猫、`cat-01`〜`cat-08` が野球盤の `Cat.swift` の順の猫 |
 | `images/app/` | 言葉ジグソーの 4 つの遊びの画面写真（kotoba-jigsaw の `docs/store/screenshots/` の写真を縮めたもの） |
 | `images/baseball/` | ことねこ野球盤のアイコンと、打つ猫・投げる猫の絵（kotoba-jigsaw の `KotobaBaseball/KotobaBaseball/Assets.xcassets` の写し） |
 | `images/` | ショートの表紙（`short-*`）・横長の回のサムネイル（`wide-*`）・漫画の表紙（`manga-*`）・note の見出し画像（`note-*`）を縮めたもの。元の絵を変えたら、ここにも写し直す |

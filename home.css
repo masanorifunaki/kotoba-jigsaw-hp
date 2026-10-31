@@ -551,19 +551,6 @@ a {
 }
 
 /* 猫たち */
-.duo {
-  flex-direction: row;
-  align-items: center;
-  gap: 6px;
-  background: var(--pink-band);
-}
-.duo img {
-  width: 76px;
-  flex: none;
-}
-.duo b {
-  color: var(--pink-text);
-}
 .cats {
   list-style: none;
   margin: 0;
@@ -571,9 +558,6 @@ a {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
   gap: 8px;
-  text-align: center;
-  font-size: 12px;
-  font-weight: 700;
 }
 
 /* フッター */
