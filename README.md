@@ -26,7 +26,7 @@
 
 ## 検索への対策
 
-Google の「SEO スターター ガイド」に沿って、各ページに固有の `title` と `description`、`canonical`、画像の `alt` を付けています。`index.html` には、アプリの構造化データ（`MobileApplication`）を JSON-LD で入れています。
+Google の「SEO スターター ガイド」に沿って、各ページに固有の `title` と `description`、`canonical`、画像の `alt` を付けています。`index.html` には、サイトと運営元の構造化データ（`WebSite`・`Organization`。`sameAs` に YouTube・TikTok・note を並べる）と、アプリの構造化データ（`MobileApplication`）を JSON-LD で入れています。`sitemap.xml` の `lastmod` は、ページの中身を変えた日に書き換えます。
 
 - Google Search Console で、URL プレフィックス `https://masanorifunaki.github.io/kotoba-jigsaw-hp/` のプロパティを登録し、`sitemap.xml` を送信します
 - 構造化データのリッチリザルトは、評価（`aggregateRating`）かレビューがないと表示されません。評価の値は作らず、実際の評価を載せられるようになってから足します
