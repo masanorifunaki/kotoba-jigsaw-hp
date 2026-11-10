@@ -415,10 +415,6 @@ button:focus-visible {
   margin-top: 6px;
   line-height: 1.6;
 }
-.video-link time {
-  color: var(--text-soft);
-  font-size: 11px;
-}
 .shorts img {
   aspect-ratio: 9 / 14;
 }
@@ -638,20 +634,6 @@ button:focus-visible {
 }
 
 /* ゲーム */
-.game-title {
-  display: flex;
-  gap: 10px;
-  align-items: center;
-}
-.game-title img {
-  width: 52px;
-  border-radius: 12px;
-}
-.game-title h3 {
-  margin: 0;
-  font-size: 17px;
-  color: var(--heading);
-}
 .game-hero {
   border-radius: 16px;
   aspect-ratio: 21 / 9;
