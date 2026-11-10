@@ -18,6 +18,7 @@
   --orange-text: #a65a14;
   --green-text: #2f7a4f;
   --grass-text: #2f6e32;
+  --grass-pill: #b9e2a4;
   --yellow-chip: #fff5c8;
   --yellow-text: #7a6200;
   --violet-chip: #f4effc;
@@ -49,6 +50,11 @@ img {
 }
 a {
   color: var(--pink-text);
+}
+a:focus-visible,
+button:focus-visible {
+  outline: 3px solid var(--sky-text);
+  outline-offset: 2px;
 }
 .wrap {
   max-width: 880px;
@@ -86,6 +92,8 @@ a {
   height: 40px;
   border-radius: 50%;
   background: #fff;
+  object-fit: cover;
+  object-position: 50% 30%;
 }
 .menu-button {
   width: 48px;
@@ -232,6 +240,26 @@ a {
 .pill.orange { background: var(--orange-pill); }
 .pill.green { background: var(--green-pill); }
 .pill.sky { background: var(--sky-pill); }
+.pill.grass { background: var(--grass-pill); }
+.pill.white { background: #fff; }
+.scroller {
+  list-style: none;
+  margin: 0 -14px;
+  padding: 0 14px 6px;
+  display: flex;
+  gap: 10px;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  scroll-padding-left: 14px;
+  scrollbar-width: none;
+}
+.scroller::-webkit-scrollbar {
+  display: none;
+}
+.scroller li {
+  flex: 0 0 42%;
+  scroll-snap-align: start;
+}
 .thumb {
   width: 100%;
   border-radius: 14px;
@@ -249,7 +277,11 @@ a {
 }
 .speech img {
   width: 64px;
+  height: 64px;
   flex: none;
+  object-fit: cover;
+  object-position: 50% 30%;
+  border-radius: 50%;
 }
 .speech p {
   flex: 1;
@@ -281,14 +313,43 @@ a {
   font-size: 14px;
   color: #4f5d6a;
 }
+.hero-actions {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 16px;
+}
+.hero-actions .pill {
+  min-height: 48px;
+  padding: 0 22px;
+  font-size: 14px;
+}
 .hero-cats {
-  display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
-  max-width: 480px;
-  margin: 14px auto 0;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  gap: 10px;
+  margin: 20px auto 0;
+  padding-bottom: 10px;
+}
+.hero-cats img {
+  width: 27%;
+  max-width: 150px;
+  aspect-ratio: 4 / 5;
+  object-fit: cover;
+  border: 4px solid #fff;
+  border-radius: 26px;
+}
+.hero-cats img:nth-child(1) {
+  transform: rotate(-4deg);
 }
 .hero-cats img:nth-child(2) {
-  transform: translateY(-12px);
+  width: 34%;
+  max-width: 190px;
+}
+.hero-cats img:nth-child(3) {
+  transform: rotate(4deg);
 }
 .doors {
   padding: 6px 0 26px;
@@ -298,26 +359,29 @@ a {
   margin: 0;
   padding: 0;
   display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
-  gap: 10px;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 8px;
 }
 .doors a {
   display: flex;
+  flex-direction: column;
   align-items: center;
-  gap: 8px;
-  min-height: 60px;
-  padding: 10px 12px;
+  justify-content: center;
+  gap: 4px;
+  min-height: 92px;
+  padding: 10px 4px;
   border-radius: 22px;
   color: var(--ink);
   text-decoration: none;
   font-weight: 700;
-  font-size: 14px;
+  font-size: 13px;
   letter-spacing: 0.02em;
   white-space: nowrap;
 }
 .doors img {
-  width: 40px;
-  height: 40px;
+  object-position: 50% 30%;
+  width: 48px;
+  height: 48px;
   border-radius: 50%;
   object-fit: cover;
   flex: none;
@@ -333,23 +397,23 @@ a {
   text-decoration: none;
   display: block;
 }
+.newest .video-link + .video-link {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+.newest .video-link + .video-link img {
+  width: 44%;
+  flex: none;
+}
+.newest .video-link + .video-link span {
+  margin-top: 0;
+}
 .video-link span {
   display: block;
   font-size: 13px;
   margin-top: 6px;
   line-height: 1.6;
-}
-.video-link time {
-  color: var(--text-soft);
-  font-size: 11px;
-}
-.shorts {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-  display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
-  gap: 10px;
 }
 .shorts img {
   aspect-ratio: 9 / 14;
@@ -493,7 +557,60 @@ a {
 }
 .after img {
   width: 70px;
+  height: 70px;
   flex: none;
+  object-fit: cover;
+  object-position: 50% 30%;
+  border-radius: 50%;
+}
+.game-pick {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 10px;
+}
+.game-pick a {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2px;
+  height: 100%;
+  padding: 14px 10px;
+  background: #fff;
+  border-radius: 22px;
+  color: inherit;
+  text-decoration: none;
+  text-align: center;
+}
+.game-pick img {
+  width: 56px;
+  height: 56px;
+  border-radius: 14px;
+  margin-bottom: 4px;
+}
+.game-pick b {
+  font-size: 14px;
+  color: var(--heading);
+}
+.game-pick small {
+  font-size: 11px;
+  font-weight: 700;
+}
+.game-pick span {
+  font-size: 11px;
+  line-height: 1.6;
+}
+.game-head {
+  margin: 12px 0 0;
+}
+.game-head h3 {
+  font-family: var(--round);
+  font-weight: 800;
+  font-size: 22px;
+  margin: 2px 0 0;
+  color: var(--heading);
 }
 .after p {
   font-size: 13px;
@@ -517,31 +634,14 @@ a {
 }
 
 /* ゲーム */
-.game-title {
-  display: flex;
-  gap: 10px;
-  align-items: center;
-}
-.game-title img {
-  width: 52px;
-  border-radius: 12px;
-}
-.game-title h3 {
-  margin: 0;
-  font-size: 17px;
-  color: var(--heading);
-}
-.field {
-  display: flex;
-  justify-content: center;
-  align-items: flex-end;
-  background: #dceff9;
+.game-hero {
   border-radius: 16px;
-  padding-top: 10px;
+  aspect-ratio: 21 / 9;
+  object-fit: cover;
 }
-.field img {
-  width: 46%;
-  max-width: 200px;
+.shots img {
+  aspect-ratio: 9 / 16;
+  object-position: top;
 }
 .points {
   margin: 0;
@@ -558,6 +658,12 @@ a {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
   gap: 8px;
+}
+.cats img {
+  width: 100%;
+  aspect-ratio: 4 / 5;
+  object-fit: cover;
+  border-radius: 22px;
 }
 
 /* フッター */
@@ -605,14 +711,36 @@ a {
   .hero h1 {
     font-size: 40px;
   }
-  .doors ul,
-  .shorts,
   .covers,
   .modes {
     grid-template-columns: repeat(4, minmax(0, 1fr));
   }
+  .doors ul {
+    grid-template-columns: repeat(6, minmax(0, 1fr));
+  }
+  .scroller {
+    margin: 0;
+    padding: 0;
+    overflow: visible;
+  }
+  .scroller li {
+    flex: 1 1 0;
+    min-width: 0;
+  }
   .newest {
     grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+  .newest .video-link + .video-link {
+    display: block;
+  }
+  .newest .video-link + .video-link img {
+    width: 100%;
+  }
+  .newest .video-link + .video-link span {
+    margin-top: 6px;
+  }
+  .cats img {
+    border-radius: 16px;
   }
   .cats {
     grid-template-columns: repeat(9, minmax(0, 1fr));
